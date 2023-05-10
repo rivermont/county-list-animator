@@ -1,0 +1,25 @@
+Ingest eBird data into checklists with sp:
+For each line:
+* If sp not spuh
+* Add to checklist with county
+Sort checklists by id
+
+[{frame1: [5, {Durham: 5, orange: 2}}, frame2: ..., ...]
+
+Empty List of sp in ea county
+
+For list in lists:
+* If any new sp
+* Add to county list
+* Create new frame entry - copy frames[-1], update county
+* Framecounter++
+
+For each frame:
+* If no frame entry, use previous valid one
+* If frame entry, calc color scale
+* Draw each county
+
+---
+
+- how to create image of county map?
+- can leaflet animate?
